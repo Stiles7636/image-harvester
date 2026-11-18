@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header>
+  <h1>🖼️ Image Harvester</h1>
+  <button id="scan">Scan page</button>
+</header>
+<div class="bar">
+  <label>Min size <select id="min"><option value="1">Any</option><option value="100" selected>100px</option><option value="300">300px</option><option value="600">600px</option></select></label>
+  <label>Type <select id="type"><option value="">All</option><option>jpg</option><option>png</option><option>webp</option><option>gif</option><option>svg</option></select></label>
+  <label class="chk"><input type="checkbox" id="scroll" checked> Auto-scroll</label>
+</div>
+<div class="bar">
+  <button id="all" class="ghost">Select all</button>
+  <button id="none" class="ghost">Clear</button>
+  <span id="count"></span>
+</div>
+<div id="grid"><div class="empty">Click <b>Scan page</b> to find images.</div></div>
+<footer>
+  <input id="folder" placeholder="Folder name">
+  <button id="dl" disabled>Download</button>
+</footer>
+<div id="st"></div>
+<script src="popup.js"></script>
+</body></html>

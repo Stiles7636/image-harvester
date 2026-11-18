@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Image Harvester",
+  "version": "1.0",
+  "description": "Find, select and bulk-download images from any web page.",
+  "permissions": ["scripting", "downloads", "activeTab", "storage"],
+  "icons": { "16": "icon16.png", "32": "icon32.png", "48": "icon48.png", "128": "icon128.png" },
+  "action": { "default_title": "Image Harvester", "default_popup": "popup.html" }
+}
